@@ -40,6 +40,14 @@
     <%= f.collection_select(:category_id, @categories, :id, :name) %>
   </p>
   <p>
+    <%= f.label :quantity %>
+    <%= f.text_field :quantity %>
+  </p>
+  <p>
+    <%= f.label :size %>
+    <%= f.text_field :size %>
+  </p>
+  <p>
     <%= f.submit 'Update' %>
   </p>
 <% end %>

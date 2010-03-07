@@ -1,3 +1,5 @@
 <fieldset>
-  <%=h item.name %>
+  <%=h item.name %><br/>
+  <%=h item.price %>
+  <%= link_to "Purchase", :action => :add_to_order, :id => item %>
 </fieldset>

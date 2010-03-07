@@ -1,0 +1,8 @@
+<% @order.items.each do |item| %>
+  <%= item.name %><%= link_to "Remove item", :action => :remove_from_order, :id => item %><br />
+<% end %>
+
+<%= link_to "Delete order", :action => :delete_order %>
+<%= link_to "Checkout", :action => :checkout %><br />
+<%= link_to "Keep shopping", :action => :index %>
+
