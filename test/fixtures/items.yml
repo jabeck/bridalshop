@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  image_url: MyString
+  bbl_id: 1
+  vendor_id: MyString
+  vendor: 1
+  vendor_name: MyString
+  date_discontinued: 2010-03-06 16:07:01
+
+two:
+  name: MyString
+  description: MyText
+  image_url: MyString
+  bbl_id: 1
+  vendor_id: MyString
+  vendor: 1
+  vendor_name: MyString
+  date_discontinued: 2010-03-06 16:07:01

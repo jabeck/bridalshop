@@ -1,0 +1,14 @@
+Shop:
+	Browse by vendor, should this be a list right away or have to click?
+	Do vendors have descriptions of themselves?
+	Browse all items -- Should this be thumbnails or names with links?
+
+Admin:
+	Everything
+
+Orders:
+	Everything
+    	implement 'cartitem' from pg 113
+
+Misc:
+	Item id's that start with 0 have to be strings

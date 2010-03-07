@@ -1,0 +1,45 @@
+<p>
+  <b>Name:</b>
+  <%=h @item.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @item.description %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%=h @item.image_url %>
+</p>
+
+<p>
+  <b>BBL id:</b>
+  <%=h @item.bbl_id %>
+</p>
+
+<p>
+  <b>Vendor Item Id:</b>
+  <%=h @item.vendor_item_id %>
+</p>
+
+<p>
+  <b>Vendor Number:</b>
+  <%=h @item.vendor_id %>
+</p>
+
+<p>
+  <b>Date discontinued:</b>
+  <%=h @item.date_discontinued %>
+</p>
+<p>
+  <b>Price:</b>
+  <%=h @item.price %>
+</p>
+<p>
+  <b>Category:</b>
+  <%=h @item.category_id %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

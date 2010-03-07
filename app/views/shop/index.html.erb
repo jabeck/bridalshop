@@ -1,0 +1,6 @@
+Featured Item<br />
+Browse by vendor<br />
+<%= render :partial => 'vendor_list', :object => @vendors %><br />
+Browse by category<br />
+<%= render :partial => 'category_list', :object => @categories %>
+<%= link_to "View all", :action => :view_all %><br />

@@ -1,0 +1,5 @@
+<%=h @vendor.name %><br />
+<% @items.each do |item| %>
+  <%= render :partial => 'item', :object => item %><br />
+<% end %>
+

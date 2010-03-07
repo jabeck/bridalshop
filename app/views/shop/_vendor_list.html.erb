@@ -1,0 +1,3 @@
+<% @vendors.each do |vendor| %>
+  <%= link_to vendor.name, :action => :vendor_browse, :id => vendor.id %><br />
+<% end %>

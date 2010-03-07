@@ -1,0 +1,4 @@
+<%=h @category.name %><br />
+<% @items.each do |item| %>
+  <%= render :partial => 'item', :object => item %><br />
+<% end %>
