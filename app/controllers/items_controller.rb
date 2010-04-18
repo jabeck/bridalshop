@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  before_filter :login_required, :except => [:show]
   # GET /items
   # GET /items.xml
   def index

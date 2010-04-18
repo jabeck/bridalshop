@@ -1,3 +1,5 @@
-<% @categories.each do |category| %>
-  <%= link_to category.name, :action => :category_browse, :id => category.id %><br />
-<% end %>
+<div class="sp-list">
+  <% @categories.each do |category| %>
+      <%= link_to category.name, :action => :category_browse, :id => category.id %><br />
+  <% end %>
+</div>

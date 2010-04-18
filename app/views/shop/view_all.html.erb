@@ -1,3 +1,6 @@
-<% @items.each do |item| %>
-  <%= render :partial => 'item', :object => item  %><br />
-<% end %>
+<div class="span-18 last">
+  <%= render :partial => 'navigator', :object => "View all items" %>
+  <% @items.each do |item| %>
+    <%= render :partial => 'item', :object => item  %>
+  <% end %>
+</div>

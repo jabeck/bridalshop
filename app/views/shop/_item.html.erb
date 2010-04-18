@@ -1,5 +1,10 @@
-<fieldset>
-  <%=h item.name %><br/>
-  <%=h item.price %>
-  <%= link_to "Purchase", :action => :add_to_order, :id => item %>
-</fieldset>
+<div class="span-4 ui-widget-header ui-corner-all item-small-box">
+  <%= link_to item.name, :controller => :items, :action => :show, :id => item %><br/>
+  <% if item.has_image? -%>
+    <%= image_tag item.image_url, :width => 140 %><br />
+  <% else -%>
+    <%= image_tag 'rails.png', :width => 140 %><br />
+  <% end -%>
+  <%=h item.price %><br />
+  <%= link_to "Purchase", :action => :add_to_order, :id => item %><br />
+</div>

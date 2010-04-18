@@ -1,0 +1,21 @@
+<h1>Listing messages</h1>
+
+<table>
+  <tr>
+    <th>Message name</th>
+    <th>Message</th>
+  </tr>
+
+<% @messages.each do |message| %>
+  <tr>
+    <td><%=h message.name %></td>
+    <td><%=h message.message %></td>
+    <td><%= link_to 'Edit', edit_message_path(message) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+// Adding new messages currently has no effect. // <br />
+<%= link_to 'New message', new_message_path %>

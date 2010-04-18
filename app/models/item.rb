@@ -10,4 +10,13 @@ class Item < ActiveRecord::Base
       false
     end
   end
+  
+  def has_image?
+    if self.image_url != nil and self.image_url != ""
+      true
+    else
+      false
+    end
+  end
+  
 end

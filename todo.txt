@@ -1,7 +1,9 @@
 Shop:
 	Browse by vendor, should this be a list right away or have to click?
 	Do vendors have descriptions of themselves?
-	Browse all items -- Should this be thumbnails or names with links?
+	Sort by price, most viewed, newest, etc.
+	flash notices aren't padded correctly
+	
 
 Admin:
 	Everything
@@ -19,3 +21,7 @@ Orders:
 
 Misc:
 	Item id's that start with 0 have to be strings
+
+
+DONE
+	Browse all items -- Should this be thumbnails or names with links? THUMBNAILS + NAMES/LINKS.

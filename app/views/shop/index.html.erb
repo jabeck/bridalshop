@@ -1,6 +1,7 @@
-Featured Item<br />
-Browse by vendor<br />
-<%= render :partial => 'vendor_list', :object => @vendors %><br />
-Browse by category<br />
-<%= render :partial => 'category_list', :object => @categories %>
-<%= link_to "View all", :action => :view_all %><br />
+<div class="span-18 last">
+  <div class="prepend-1"><h3> View our in-store specials on discontinued dresses, shoes, and jewelry: </h3></div>
+  <% @items.each do |item| %>
+    <%= render :partial => 'item', :object => item  %>
+  <% end %>
+  <div class="span-13 last"><br /></div>
+  </div>

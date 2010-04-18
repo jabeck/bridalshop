@@ -1,10 +1,11 @@
+<div class="span-18 last">
 <h1>New item</h1>
 
 <% form_for(@item) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :name %><br />
+    <b>Item name: </b><br />
     <%= f.text_field :name %>
   </p>
   <p>
@@ -16,11 +17,11 @@
     <%= f.text_field :image_url %>
   </p>
   <p>
-    <%= f.label "BBL_id" %><br />
+    <%= f.label "BBL_Number" %><br />
     <%= f.text_field :bbl_id %>
   </p>
   <p>
-    <%= f.label "Vendor_Item_Id" %><br />
+    <%= f.label "Vendor_Item_Number" %><br />
     <%= f.text_field :vendor_item_id %>
   </p>
   <p>
@@ -45,3 +46,4 @@
 <% end %>
 
 <%= link_to 'Back', items_path %>
+</div>

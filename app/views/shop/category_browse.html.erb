@@ -1,4 +1,6 @@
-<%=h @category.name %><br />
-<% @items.each do |item| %>
-  <%= render :partial => 'item', :object => item %><br />
-<% end %>
+<div class="span-18 last">
+  <%= render :partial => 'navigator', :object => @category.name %>
+  <% @items.each do |item| %>
+    <%= render :partial => 'item', :object => item %>
+  <% end %>
+</div>

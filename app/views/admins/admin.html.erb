@@ -1,0 +1,13 @@
+<% if logged_in? -%>
+  <div id="admin-bar-greeting" class="prepend-14 span-3 last">Logged in as <%= link_to_current_admin :content_method => :login %></div>
+  <div id="admin-bar-action" class="prepend-14 span-3 last"  >(<%= link_to "Log out", logout_path, { :title => "Log out" }    %>)</div>
+  <br /><br />
+  <%= link_to "Add new merchandise", :controller => :items, :action => :new %><br />
+  <%= link_to "View all items", :controller => :items, :action => :index %><br />
+  <%= link_to "View all categories", :controller => :categories, :action => :index %><br />
+  <%= link_to "View all vendors", :controller => :vendors, :action => :index %><br />
+  <%= link_to "Modify messages", :controller => :messages, :action => :index %><br />
+<% else -%>
+  <div class="prepend-6 span-6 last"><h2 class="prepend-1 ui-state-error ui-state-error-text ui-corner-all"> Please log in </h2></div>
+  <%= render :partial => 'sessions/new' %>
+<% end -%>

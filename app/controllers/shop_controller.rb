@@ -1,8 +1,13 @@
 class ShopController < ApplicationController
   def index
-    @vendors = Vendor.find(:all)
-    @categories = Category.find(:all)
-
+    @welcome_message = Message.find(:first, :conditions => ["id = ?", 1])
+    @items = Item.find(:all)
+    @featured_items = []
+    3.times do
+      @featured_items << gen_random_item(@items, @featured_items)
+    end
+    
+    
     respond_to do |format|
         format.html 
         format.xml
@@ -17,7 +22,7 @@ class ShopController < ApplicationController
         flash[:notice] = "Item added successfully."
         format.html { redirect_to :action => :display_order }
       else
-        flash[:notice] = "There was an error."
+        flash[:notice] = "There was an error adding your item."
         format.html { redirect_to :action => :display_order }
       end
     end
@@ -37,12 +42,16 @@ class ShopController < ApplicationController
     end
   end
 
-  def vendor_browse
+  def designer_browse
     @vendor = Vendor.find(params[:id])
     @items = @vendor.items.collect
     respond_to do |format|
       format.html
     end
+  end
+  
+  def designer_list
+    @vendors = Vendor.find(:all)
   end
 
   def category_browse
@@ -78,4 +87,14 @@ class ShopController < ApplicationController
   def find_order
     session[:order] ||= Order.new
   end
+  
+  def gen_random_item(all_items, featured_items)
+    item = all_items[rand(all_items.length)]
+    if not featured_items.include?(item)
+      item
+    else
+      gen_random_item(all_items, featured_items)
+    end
+  end
+  
 end
