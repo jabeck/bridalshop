@@ -1,10 +1,11 @@
-<div class="span-4 ui-widget-header ui-corner-all item-small-box">
-  <%= link_to item.name, :controller => :items, :action => :show, :id => item %><br/>
+<% link_to({:controller => :items, :action => :show, :id => item}, :style => "text-decoration: none;") do %>
+<div class="span-5 ui-widget-header ui-corner-all item-small-box">
+  <%= item.name %><br/>
   <% if item.has_image? -%>
-    <%= image_tag item.image_url, :width => 140 %><br />
+    <%= image_tag item.image_url, :width => 180 %><br />
   <% else -%>
-    <%= image_tag 'rails.png', :width => 140 %><br />
+    <%= image_tag 'noimage.png', :width => 180 %><br />
   <% end -%>
-  <%=h item.price %><br />
-  <%= link_to "Purchase", :action => :add_to_order, :id => item %><br />
+  <%=h item.formatted_price %><br />
 </div>
+<% end %>

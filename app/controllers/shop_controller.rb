@@ -1,6 +1,6 @@
 class ShopController < ApplicationController
   def index
-    @welcome_message = Message.find(:first, :conditions => ["id = ?", 1])
+    @welcome_message = Message.find(:first, :conditions => ["name = ?", 'Welcome Message'])
     @items = Item.find(:all)
     @featured_items = []
     3.times do
@@ -52,6 +52,7 @@ class ShopController < ApplicationController
   
   def designer_list
     @vendors = Vendor.find(:all)
+    @designer_message = Message.find(:first, :conditions => ["name = ?", 'Designer Message'])
   end
 
   def category_browse

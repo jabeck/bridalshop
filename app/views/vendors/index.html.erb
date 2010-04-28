@@ -1,24 +1,23 @@
-<div class="prepend-1">
-<h1>Vendors</h1>
+<div class="span-18 last">
+	<h1>Vendors
+		<span class="prepend-8 last"><%= link_to 'Add New Vendor', new_vendor_path, :style => "font-size: medium;" %></span>
+	</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Id</th>
-  </tr>
+	<table>
+		<tr>
+		  <th>Name</th>
+		  <th>Id</th>
+		</tr>
 
-<% @vendors.each do |vendor| %>
-  <tr>
-    <td><%=h vendor.name %></td>
-    <td><%=h vendor.id %></td>
-    <td><%= link_to 'Show', vendor %></td>
-    <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
-    <td><%= link_to 'Destroy', vendor, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+		<% @vendors.each do |vendor| %>
+		  <tr>
+		    <td><%= link_to vendor.name, :action => :show, :id => vendor %></td>
+		    <td><%=h vendor.id %></td>
+		    <td><%= link_to 'Edit', edit_vendor_path(vendor) %></td>
+		    <td><%= link_to 'Delete', vendor, :confirm => 'Are you sure?', :method => :delete %></td>
+		  </tr>
+		<% end %>
+	</table>
 
-<br />
-
-<%= link_to 'New vendor', new_vendor_path %>
+	<br />
 </div>

@@ -10,16 +10,27 @@
   <%= stylesheet_link_tag 'bridalshop' %>
   <%= javascript_include_tag 'jquery-1.4.2.min.js' %>
   <%= javascript_include_tag 'jquery-ui-1.8.custom.min.js' %>
+  <script type="text/javascript">
+	$(function() {
+		$("button, submit").button();
+	});
+	</script>
 </head>
 <body>
-  <div id="wrapper" class="span-20 ui-widget-content ui-corner-all">
-    <%= image_tag 'header.png' %>
-    <%= render :partial => '/shop/top_bar' %>
-    <div class="prepend-1">
-      <p style="color: green" class="prepend-1"><%= flash[:notice] %></p>
-
-      <%= yield %>
-    </div>
+  <div id="wrapper" class="ui-helper-clearfix">
+	<div class="span-20 ui-widget-content ui-corner-all ui-helper-clearfix" style="padding-bottom: 30px;">
+	    <div id="header" class="ui-corner-top span-20 last"><%= image_tag 'header.png' %></div>
+	    <%= render :partial => '/shop/top_bar' %>
+	    <div class="prepend-1 span-19 last">
+	      <p style="color: #862904" class="prepend-1"><%= flash[:notice] %></p>
+	      <%= yield %>
+	    </div>
+		<div class='prepend-1 span-4 last'>
+	      <% if logged_in? %>
+		  	<%= link_to "Admin Page", :controller => :admin %>
+		  <% end %>
+		</div>
+	</div>
   </div>
 </body>
 </html>

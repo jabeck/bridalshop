@@ -1,7 +1,7 @@
 class Item < ActiveRecord::Base
   belongs_to :category
   belongs_to :vendor
-  #validates_presence_of :name, :vendor_id, :bbl_id, :vendor_item_id, :category_id, :on => :create
+  validates_presence_of :name, :vendor_id, :bbl_id, :vendor_item_id, :category_id, :on => :create
 
   def is_available_for_purchase
     if self.quantity > 0
@@ -17,6 +17,10 @@ class Item < ActiveRecord::Base
     else
       false
     end
+  end
+  
+  def formatted_price
+    sprintf("$%.2f",self.price)
   end
   
 end

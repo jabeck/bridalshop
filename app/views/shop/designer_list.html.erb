@@ -1,8 +1,5 @@
-<div class="prepend-6 span-8 last">
-  <h3>Browse by Designer</h3>
-  <div class="prepend-1 span-7 last">
-    <% @vendors.each do |vendor| %>
-      <h3><%= link_to vendor.name, :action => :designer_browse, :id => vendor.id %></h3>
-    <% end %>
-  </div>
+<div class="prepend-1 span-17 last">
+	<% @vendors.each do |vendor| %>
+		<div class="span-4"><h3><%= link_to vendor.name, :action => :designer_browse, :id => vendor.id %></h3></div>
+	<% end %>
 </div>

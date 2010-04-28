@@ -1,16 +1,11 @@
-<div class="prepend-7 span-6 last">
-<% form_tag session_path do -%>
-<p><%= label_tag 'login' %><br />
-<%= text_field_tag 'login', @login %></p>
+<div class="prepend-5 span-7 last" style="font-size: large;">
+	<% form_tag session_path do -%>
+		<p><%= label_tag 'login' %><br />
+		<%= text_field_tag 'login', @login, :style => "font-size: large;" %></p>
 
-<p><%= label_tag 'password' %><br/>
-<%= password_field_tag 'password', nil %></p>
+		<p><%= label_tag 'password' %><br/>
+		<%= password_field_tag 'password', nil, :style => "font-size: large;" %></p>
 
-<!-- Uncomment this if you want this functionality
-<p><%= label_tag 'remember_me', 'Remember me' %>
-<%= check_box_tag 'remember_me', '1', @remember_me %></p>
--->
-
-<p><%= submit_tag 'Log in' %></p>
-<% end -%>
+		<p><%= submit_tag 'Log in', :style => "font-size: large; padding: 10px;", :class => "ui-state-hover ui-corner-all" %></p>
+	<% end -%>
 </div>

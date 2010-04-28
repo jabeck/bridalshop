@@ -8,8 +8,8 @@ class CreateItems < ActiveRecord::Migration
       t.string :vendor_id
       t.integer :vendor
       t.string :vendor_name
-      t.datetime :date_discontinued
-      t.decimal :price, :precision => 8, :scale =>2, :default => 0
+      t.date :date_discontinued
+      t.decimal :price, :precision => 8, :scale => 2, :default => 0
 
       t.timestamps
     end

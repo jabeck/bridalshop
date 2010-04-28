@@ -1,13 +1,17 @@
+<div id="admin-page">
 <% if logged_in? -%>
-  <div id="admin-bar-greeting" class="prepend-14 span-3 last">Logged in as <%= link_to_current_admin :content_method => :login %></div>
-  <div id="admin-bar-action" class="prepend-14 span-3 last"  >(<%= link_to "Log out", logout_path, { :title => "Log out" }    %>)</div>
-  <br /><br />
-  <%= link_to "Add new merchandise", :controller => :items, :action => :new %><br />
-  <%= link_to "View all items", :controller => :items, :action => :index %><br />
-  <%= link_to "View all categories", :controller => :categories, :action => :index %><br />
-  <%= link_to "View all vendors", :controller => :vendors, :action => :index %><br />
-  <%= link_to "Modify messages", :controller => :messages, :action => :index %><br />
+	<div class='span-18 last'>
+  		<a href='/items' style="text-decoration: none;"><div class="admin-link span-4 ui-state-hover ui-corner-all">Items</div></a>
+
+  		<a href='/categories' style="text-decoration: none;"><div class="admin-link span-4 ui-state-hover ui-corner-all">Categories</div></a>
+  		<a href='/vendors' style="text-decoration: none;"><div class="admin-link span-4 ui-state-hover ui-corner-all">Vendors</div></a>
+  		<a href='/messages' style="text-decoration: none;"><div class="admin-link span-4 ui-state-hover ui-corner-all last">Messages</div></a>
+	</div>
+  	
+	<% link_to (logout_path, { :title => "Log out", :style => "text-decoration: none;" }) do %>
+		<div class="admin-link span-4 ui-state-default ui-corner-all last">Log Out</div>
+	<% end %>
 <% else -%>
-  <div class="prepend-6 span-6 last"><h2 class="prepend-1 ui-state-error ui-state-error-text ui-corner-all"> Please log in </h2></div>
   <%= render :partial => 'sessions/new' %>
 <% end -%>
+</div>

@@ -10,21 +10,17 @@
       <% if @item.has_image? %>
         <%= image_tag @item.image_url, :width => 380 %>
       <% else %>
-        <%= image_tag 'rails.png' %>
+        <%= image_tag 'noimage.png' %>
       <% end %>
     </div>
     <div class="description-box span-7 last ui-widget-header ui-corner-all">
-      <b>Description:</b><br />
-      <%=h @item.description %>
-
-      <b>Date discontinued:</b>
-      <%=h @item.date_discontinued %><br />
-
       <div class="price">
-        $<%=h @item.price %><br />
-      </div>
+        <%=h @item.formatted_price %><br />
+      </div><br />
+      <%=h @item.description %><br />
 
-      <button class="ui-button ui-state-default ui-corner-all">Add to cart</button>
+	<br /><br />
+	<%= @purchase_message.message %><br />
     </div>
   </div>
-</div
+</div>

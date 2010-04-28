@@ -1,0 +1,9 @@
+<div id="tabs" class="sp-label span-20 ui-button ui-state-default ui-corner-all last">
+  <ul>
+    <li><%= button_to "Browse All", {:action => :index}, {:class => "sp-button button"} %></li>
+    <li><%= button_to "Wedding Gowns", {:action => :category_browse, :id => 1}, {:class => "sp-button"} %></li>
+    <li><%= button_to "Bridesmaid Gowns", {:action => :category_browse, :id => 2}, {:class => "sp-button"} %></li>
+    <li><%= button_to "Shoes", {:action => :category_browse, :id => 3}, {:class => "sp-button"}  %></li>
+    <li><%= button_to "Designers", {:action => :designer_list}, {:class => "sp-button"} %></li>
+  </ul>
+</div>

@@ -15,6 +15,7 @@ class ItemsController < ApplicationController
   # GET /items/1.xml
   def show
     @item = Item.find(params[:id])
+    @purchase_message = Message.find(:first, :conditions => ["name = ?", 'Purchase Message'])
 
     respond_to do |format|
       format.html # show.html.erb

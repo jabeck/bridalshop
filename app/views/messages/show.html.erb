@@ -1,0 +1,9 @@
+<div class="span-18 last">
+  	<h3 class="ui-widget-header ui-corner-all last">
+  		<%=h @message.message %>
+	</h3>
+	<div class="prepend-1">
+		(<%= @message.description %>)<br /><br />
+	</div>
+	<%= link_to 'Back to messages', :action => :index %>
+</div>
