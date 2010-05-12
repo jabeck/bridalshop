@@ -1,14 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :images, :collection => { :swfupload => :post }
-
-  map.resources :messages
-
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'admins', :action => 'create'
   map.signup '/signup', :controller => 'admins', :action => 'new'
-  map.connect '/admin', :controller => 'admins', :action => 'admin'
   map.resources :admins
+
+  map.resource :session
+
+  map.resources :images, :collection => { :swfupload => :post }
+
+  map.resources :messages
 
   map.resource :session
 
