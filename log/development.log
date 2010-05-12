@@ -37828,3 +37828,55 @@ Migrating to CreateUploadableImages (20100505185039)
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("vendors")[0m
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 18:48:32) [GET]
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" WHERE (name = 'Welcome Message') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+
+SystemStackError (stack level too deep):
+  app/controllers/shop_controller.rb:97:in `gen_random_item'
+  app/controllers/shop_controller.rb:97:in `gen_random_item'
+  app/controllers/shop_controller.rb:7:in `index'
+  app/controllers/shop_controller.rb:6:in `times'
+  app/controllers/shop_controller.rb:6:in `index'
+
+Rendered rescues/_trace (41.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCategory Create (0.4ms)[0m   [0;1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES('Wedding Gown', '2010-05-12 22:48:49', '2010-05-12 22:48:49')[0m
+  [4;35;1mCategory Create (0.4ms)[0m   [0mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES('Bridesmaid Gown', '2010-05-12 22:48:49', '2010-05-12 22:48:49')[0m
+  [4;36;1mCategory Create (0.4ms)[0m   [0;1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES('Shoes', '2010-05-12 22:48:49', '2010-05-12 22:48:49')[0m
+  [4;35;1mVendor Load (0.2ms)[0m   [0mSELECT "vendors".id FROM "vendors" WHERE ("vendors"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mVendor Create (0.6ms)[0m   [0;1mINSERT INTO "vendors" ("name", "created_at", "updated_at") VALUES('Alfred Angelo', '2010-05-12 22:48:49', '2010-05-12 22:48:49')[0m
+  [4;35;1mVendor Load (0.2ms)[0m   [0mSELECT "vendors".id FROM "vendors" WHERE ("vendors"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mVendor Create (0.3ms)[0m   [0;1mINSERT INTO "vendors" ("name", "created_at", "updated_at") VALUES('Maggie Sottero', '2010-05-12 22:48:49', '2010-05-12 22:48:49')[0m
+  [4;35;1mVendor Load (0.2ms)[0m   [0mSELECT "vendors".id FROM "vendors" WHERE ("vendors"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mVendor Create (2.7ms)[0m   [0;1mINSERT INTO "vendors" ("name", "created_at", "updated_at") VALUES('Casablanca', '2010-05-12 22:48:49', '2010-05-12 22:48:49')[0m
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("name", "created_at", "updated_at", "description", "message") VALUES('Welcome Message', '2010-05-12 22:48:49', '2010-05-12 22:48:49', 'This message will appear in the title of the /shop page.', 'Welcome to Dan''s Bridal and Tuxedo Online Store!')[0m
+  [4;36;1mMessage Create (0.3ms)[0m   [0;1mINSERT INTO "messages" ("name", "created_at", "updated_at", "description", "message") VALUES('Purchase Message', '2010-05-12 22:48:49', '2010-05-12 22:48:49', 'This message will appear on each item''s page', 'To purchase this item, please call us at<br />906-228-8184')[0m
+  [4;35;1mMessage Create (0.4ms)[0m   [0mINSERT INTO "messages" ("name", "created_at", "updated_at", "description", "message") VALUES('Designer Message', '2010-05-12 22:48:49', '2010-05-12 22:48:49', 'This message will appear in the title of the /shop/designer_list page.', 'Browse our specials from these designers:')[0m
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 18:49:00) [GET]
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" WHERE (name = 'Welcome Message') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+
+SystemStackError (stack level too deep):
+  app/controllers/shop_controller.rb:93:in `gen_random_item'
+  app/controllers/shop_controller.rb:97:in `gen_random_item'
+  app/controllers/shop_controller.rb:7:in `index'
+  app/controllers/shop_controller.rb:6:in `times'
+  app/controllers/shop_controller.rb:6:in `index'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 18:50:20) [GET]
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" WHERE (name = 'Welcome Message') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/shop
+Rendering shop/index
+Completed in 93ms (View: 84, DB: 1) | 200 OK [http://localhost/shop]

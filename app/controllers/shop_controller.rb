@@ -2,11 +2,6 @@ class ShopController < ApplicationController
   def index
     @welcome_message = Message.find(:first, :conditions => ["name = ?", 'Welcome Message'])
     @items = Item.find(:all)
-    @featured_items = []
-    3.times do
-      @featured_items << gen_random_item(@items, @featured_items)
-    end
-    
     
     respond_to do |format|
         format.html 
@@ -87,15 +82,6 @@ class ShopController < ApplicationController
   private
   def find_order
     session[:order] ||= Order.new
-  end
-  
-  def gen_random_item(all_items, featured_items)
-    item = all_items[rand(all_items.length)]
-    if not featured_items.include?(item)
-      item
-    else
-      gen_random_item(all_items, featured_items)
-    end
   end
   
 end
