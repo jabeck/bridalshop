@@ -37880,3 +37880,125 @@ Processing ShopController#index (for 127.0.0.1 at 2010-05-12 18:50:20) [GET]
 Rendering template within layouts/shop
 Rendering shop/index
 Completed in 93ms (View: 84, DB: 1) | 200 OK [http://localhost/shop]
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 18:53:07) [GET]
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" WHERE (name = 'Welcome Message') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering shop/index
+Rendered shop/_top_bar (0.6ms)
+Completed in 49ms (View: 32, DB: 1) | 200 OK [http://localhost/shop]
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 18:53:10) [GET]
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" WHERE (name = 'Welcome Message') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering shop/index
+Rendered shop/_top_bar (0.1ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/shop]
+
+
+Processing ShopController#category_browse (for 127.0.0.1 at 2010-05-12 18:53:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items".category_id = 1) [0m
+Rendering template within layouts/application
+Rendering shop/category_browse
+Rendered shop/_navigator (1.5ms)
+Rendered shop/_top_bar (0.1ms)
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/shop/category_browse/1]
+
+
+Processing ShopController#category_browse (for 127.0.0.1 at 2010-05-12 18:53:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items".category_id = 2) [0m
+Rendering template within layouts/application
+Rendering shop/category_browse
+Rendered shop/_navigator (0.3ms)
+Rendered shop/_top_bar (0.1ms)
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/shop/category_browse/2]
+
+
+Processing ShopController#category_browse (for 127.0.0.1 at 2010-05-12 18:53:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items".category_id = 3) [0m
+Rendering template within layouts/application
+Rendering shop/category_browse
+Rendered shop/_navigator (0.3ms)
+Rendered shop/_top_bar (0.1ms)
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/shop/category_browse/3]
+
+
+Processing ShopController#designer_list (for 127.0.0.1 at 2010-05-12 18:53:16) [GET]
+  [4;36;1mVendor Load (0.7ms)[0m   [0;1mSELECT * FROM "vendors" [0m
+  [4;35;1mMessage Load (0.2ms)[0m   [0mSELECT * FROM "messages" WHERE (name = 'Designer Message') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering shop/designer_list
+Rendered shop/_top_bar (0.1ms)
+Completed in 78ms (View: 71, DB: 1) | 200 OK [http://localhost/shop/designer_list]
+
+
+Processing ShopController#designer_browse (for 127.0.0.1 at 2010-05-12 18:53:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mVendor Load (0.2ms)[0m   [0;1mSELECT * FROM "vendors" WHERE ("vendors"."id" = 2) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items".vendor_id = 2) [0m
+Rendering template within layouts/application
+Rendering shop/designer_browse
+Rendered shop/_navigator (0.3ms)
+Rendered shop/_top_bar (0.1ms)
+Completed in 19ms (View: 8, DB: 1) | 200 OK [http://localhost/shop/designer_browse/2]
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 18:53:21) [GET]
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" WHERE (name = 'Welcome Message') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering shop/index
+Rendered shop/_top_bar (0.1ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/shop]
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 18:53:22) [GET]
+  [4;36;1mMessage Load (0.6ms)[0m   [0;1mSELECT * FROM "messages" WHERE (name = 'Welcome Message') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering shop/index
+Rendered shop/_top_bar (0.1ms)
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/shop]
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 18:53:25) [GET]
+Rendering template within layouts/application
+Rendering admins/admin
+Rendered sessions/_new (7.6ms)
+Rendered shop/_top_bar (0.1ms)
+Completed in 23ms (View: 21, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-12 18:53:30) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"LFavaIlNVaT8R+tVG7Mg8evDz4t7x4hc/zLHmsA3eWs=", "login"=>"admin", "password"=>"adminadmin"}
+
+NameError (uninitialized constant Admin::Authentication):
+  app/models/admin.rb:4
+  lib/authenticated_system.rb:138:in `logout_keeping_session!'
+  app/controllers/sessions_controller.rb:11:in `create'
+
+Rendered rescues/_trace (48.1ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mCategory Create (0.4ms)[0m   [0;1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES('Wedding Gown', '2010-05-12 22:58:45', '2010-05-12 22:58:45')[0m
+  [4;35;1mCategory Create (0.4ms)[0m   [0mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES('Bridesmaid Gown', '2010-05-12 22:58:45', '2010-05-12 22:58:45')[0m
+  [4;36;1mCategory Create (11.3ms)[0m   [0;1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES('Shoes', '2010-05-12 22:58:45', '2010-05-12 22:58:45')[0m
+  [4;35;1mVendor Load (0.2ms)[0m   [0mSELECT "vendors".id FROM "vendors" WHERE ("vendors"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mVendor Create (0.3ms)[0m   [0;1mINSERT INTO "vendors" ("name", "created_at", "updated_at") VALUES('Alfred Angelo', '2010-05-12 22:58:45', '2010-05-12 22:58:45')[0m
+  [4;35;1mVendor Load (1.6ms)[0m   [0mSELECT "vendors".id FROM "vendors" WHERE ("vendors"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mVendor Create (1.5ms)[0m   [0;1mINSERT INTO "vendors" ("name", "created_at", "updated_at") VALUES('Maggie Sottero', '2010-05-12 22:58:45', '2010-05-12 22:58:45')[0m
+  [4;35;1mVendor Load (0.2ms)[0m   [0mSELECT "vendors".id FROM "vendors" WHERE ("vendors"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mVendor Create (0.3ms)[0m   [0;1mINSERT INTO "vendors" ("name", "created_at", "updated_at") VALUES('Casablanca', '2010-05-12 22:58:45', '2010-05-12 22:58:45')[0m
+  [4;35;1mMessage Create (0.5ms)[0m   [0mINSERT INTO "messages" ("name", "created_at", "updated_at", "description", "message") VALUES('Welcome Message', '2010-05-12 22:58:45', '2010-05-12 22:58:45', 'This message will appear in the title of the /shop page.', 'Welcome to Dan''s Bridal and Tuxedo Online Store!')[0m
+  [4;36;1mMessage Create (0.5ms)[0m   [0;1mINSERT INTO "messages" ("name", "created_at", "updated_at", "description", "message") VALUES('Purchase Message', '2010-05-12 22:58:45', '2010-05-12 22:58:45', 'This message will appear on each item''s page', 'To purchase this item, please call us at<br />906-228-8184')[0m
+  [4;35;1mMessage Create (9.2ms)[0m   [0mINSERT INTO "messages" ("name", "created_at", "updated_at", "description", "message") VALUES('Designer Message', '2010-05-12 22:58:45', '2010-05-12 22:58:45', 'This message will appear in the title of the /shop/designer_list page.', 'Browse our specials from these designers:')[0m
