@@ -16,7 +16,8 @@ class ItemsController < ApplicationController
   def show
     @item = Item.find(params[:id])
     @purchase_message = Message.find(:first, :conditions => ["name = ?", 'Purchase Message'])
-
+    @images = @item.images.collect
+    @main_image = @item.get_main_image
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @item }
@@ -39,6 +40,7 @@ class ItemsController < ApplicationController
   # GET /items/1/edit
   def edit
     @item = Item.find(params[:id])
+    @images = @item.images.collect
     @categories = Category.find(:all)
     @vendors = Vendor.find(:all)
   end
@@ -47,11 +49,13 @@ class ItemsController < ApplicationController
   # POST /items.xml
   def create
     @item = Item.new(params[:item])
-
+    @vendors = Vendor.find(:all)
+    @categories = Category.find(:all)
+    
     respond_to do |format|
       if @item.save
         flash[:notice] = 'Item was successfully created.'
-        format.html { redirect_to(@item) }
+        format.html { redirect_to :controller => :images, :action => :new, :item_id => @item.id }
         format.xml  { render :xml => @item, :status => :created, :location => @item }
       else
         format.html { render :action => "new" }

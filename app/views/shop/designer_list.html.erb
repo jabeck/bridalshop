@@ -1,4 +1,7 @@
 <div class="prepend-1 span-17 last">
+	<div class="span-17 last">
+		<h3><%= @designer_message.message %></h3>
+	</div>
 	<% @vendors.each do |vendor| %>
 		<div class="span-4"><h3><%= link_to vendor.name, :action => :designer_browse, :id => vendor.id %></h3></div>
 	<% end %>

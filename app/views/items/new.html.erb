@@ -1,49 +1,62 @@
 <div class="span-18 last">
-<h1>New item</h1>
+	<h1>New item</h1>
 
-<% form_for(@item) do |f| %>
-  <%= f.error_messages %>
+	<% form_for(@item) do |f| %>
+	  <%= f.error_messages %>
 
-  <p>
-    <b>Item name: </b><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </p>
-  <p>
-    <%= f.label "Image_url" %><br />
-    <%= f.text_field :image_url %>
-  </p>
-  <p>
-    <%= f.label "BBL_Number" %><br />
-    <%= f.text_field :bbl_id %>
-  </p>
-  <p>
-    <%= f.label "Vendor_Item_Number" %><br />
-    <%= f.text_field :vendor_item_id %>
-  </p>
-  <p>
-    <%= f.label "Vendor" %><br />
-    <%= f.collection_select(:vendor_id, @vendors, :id, :name) %>
-  </p>
-  <p>
-    <%= f.label :date_discontinued %><br />
-    <%= f.date_select :date_discontinued %>
-  </p>
-  <p>
-    <%= f.label :price %>
-    <%= f.text_field :price %>
-  </p>
-  <p>
-    <%= f.label :category_id %>
-    <%= f.collection_select(:category_id, @categories, :id, :name) %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+			<div class="span-9">
+				<%= f.label "Item Name" %><br />
+				<%= f.text_field :name %>
+			</div>
 
-<%= link_to 'Back', items_path %>
+			<div class="span-9 last">
+				<%= f.label "BBL_Number" %><br />
+				<%= f.text_field :bbl_id %><br /><br />
+			</div><br />
+
+			<div class="span-4">
+				<%= f.label "Vendor" %><br />
+				<%= f.collection_select(:vendor_id, @vendors, :id, :name) %>
+			</div>
+
+			<div class="span-8">
+				<%= f.label "Vendor_Item_Number" %><br />
+				<%= f.text_field :vendor_item_id %><br /><br />
+			</div>
+
+			<div class="span-6 last">
+				<%= f.label :date_discontinued %><br />
+				<%= f.date_select :date_discontinued %><br /><br />
+			</div>
+			<div class="span-4">
+				<%= f.label :category_id %><br />
+				<%= f.collection_select(:category_id, @categories, :id, :name) %>
+			</div>
+
+			<div class="span-3">
+				<%= f.label :price %><br />
+				<%= f.text_field :price, :size => 7 %>
+			</div>
+			<div class="span-3">
+				<%= f.label :size %><br />
+				<%= f.text_field :size, :size => 5 %>
+			</div>
+
+			<div class="span-8 last">
+				<%= f.label :quantity %><br />
+				<%= f.text_field :quantity, :size => 5 %><br /><br />
+			</div>
+
+
+			<div>
+				<%= f.label :description %><br />
+				<%= f.text_area :description %><br /><br />
+			</div>
+
+	 	<div>
+	    	<%= f.submit 'Create' %>
+		</div>
+	<% end %>
+
+	<%= link_to 'Back', items_path %>
 </div>

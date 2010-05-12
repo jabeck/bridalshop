@@ -1,26 +1,48 @@
 <div class="span-18 last">
   <h3 class="ui-widget-header ui-corner-all last">
-  <%=h @item.name %>
-  <% if logged_in? -%>
-    <span class="prepend-12"><%= link_to 'Edit this item', :action => :edit, :id => @item %></span>
-  <% end -%>
-  </h3>
-  <div class="container span-18 last">
-    <div class="span-10 image-box">
+	  <%=h @item.name %>
+	  <% if logged_in? -%>                                                                               
+	    <span class="prepend-12"><%= link_to 'Edit this item', :action => :edit, :id => @item %></span>  
+	  <% end -%>                                                                                         
+  </h3>                                                                                                  
+  <div class="container span-18 last">                                                                 
+    <div class="span-10 image-box">                                                                      
       <% if @item.has_image? %>
-        <%= image_tag @item.image_url, :width => 380 %>
-      <% else %>
-        <%= image_tag 'noimage.png' %>
-      <% end %>
-    </div>
-    <div class="description-box span-7 last ui-widget-header ui-corner-all">
-      <div class="price">
-        <%=h @item.formatted_price %><br />
-      </div><br />
-      <%=h @item.description %><br />
-
+		<% if @images.size > 1%>
+			<div class="span-7">
+	        	<%= link_to (image_tag @main_image.public_filename, :width => 270), @main_image.public_filename, :rel => "shadowbox[Images]" %>
+			</div>
+		<% else %>
+			<div class="span-7">
+        		<%= link_to (image_tag @main_image.public_filename, :width => 390), @main_image.public_filename, :rel => "shadowbox[Images]" %>
+			</div>
+		<% end %>
+		<div class="span-3 last">
+			<% @images.each do |image| %>
+				<% if image.id != @main_image.id %>
+	        		<%= link_to (image_tag image.public_filename(:thumb), :width => 100), image.public_filename, :rel => "shadowbox[Images]" %><br /><br />
+				<% end %>
+			<% end %>
+	  </div>
+      <% else %>                                                                                         
+        <%= image_tag 'noimage.png' %>                                                                   
+      <% end %>                                                                                          
+    </div>                                                                                               
+    <div class="description-box span-7 last ui-widget-header ui-corner-all">                             
+	  <%=h @item.formatted_price %><br /><br />                                                                                                                                       
+	  Sizes available: <%= @item.size %><br /><br />                                                                                                                                                                
+      <%=h @item.description %><br />                                                                    
+                                                                                                         
 	<br /><br />
 	<%= @purchase_message.message %><br />
     </div>
   </div>
 </div>
+<script type="text/javascript">
+	$(".shadowbox-show").click(function() {
+		Shadowbox.open({
+			content: '<img src="/images/header.png"></img>'
+			player: "html"
+		});
+	});
+</script>

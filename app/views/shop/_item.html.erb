@@ -2,7 +2,7 @@
 <div class="span-5 ui-widget-header ui-corner-all item-small-box">
   <%= item.name %><br/>
   <% if item.has_image? -%>
-    <%= image_tag item.image_url, :width => 180 %><br />
+    <%= image_tag item.get_main_image.public_filename(:thumb) %><br />
   <% else -%>
     <%= image_tag 'noimage.png', :width => 180 %><br />
   <% end -%>

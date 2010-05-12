@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :images, :collection => { :swfupload => :post }
+
   map.resources :messages
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'

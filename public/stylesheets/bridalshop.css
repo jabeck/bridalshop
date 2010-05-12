@@ -18,24 +18,24 @@ Body {
 	margin-bottom: 1em;
 }
 
-.browse-by-box {
-    
-}
-
-.sp-label {
-    padding:0;
-    font-size: 10pt;
-}
-
 #header {
     background: #404040;
 }
 
 #tabs {
+	padding:0;
+    font-size: 10pt;
+	border: 1px solid #d9d6c4; 
+	background: #8a7451 url('pepper-grinder/images/ui-bg_highlight-soft_60_8a7451_1x100.png') 50% 50% repeat-x; 
+	font-weight: bold; 
+	color: #140f06;
     border-left: none;
     border-right: none;
 }
 
+form, input {
+	font-size: 11pt;
+}
 .admin-link {
 	font-size: large; 
 	padding: 10px;
@@ -74,6 +74,7 @@ h3 {
     padding-bottom: 10px;
     margin-bottom: 30px;
 	margin-left: 20px;
+	height: 270px;
 	text-decoration: none!important;
 }
 
