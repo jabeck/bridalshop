@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100505221239) do
+ActiveRecord::Schema.define(:version => 20100505185039) do
 
   create_table "admins", :force => true do |t|
     t.string   "login",                     :limit => 40
@@ -42,18 +42,27 @@ ActiveRecord::Schema.define(:version => 20100505221239) do
     t.integer "item_id"
   end
 
-# Could not dump table "items" because of following StandardError
-#   Unknown type 'image' for column 'main_image'
+  create_table "items", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "image_url"
+    t.integer  "bbl_id"
+    t.integer  "vendor_id"
+    t.string   "vendor_item_id"
+    t.date     "date_discontinued"
+    t.decimal  "price",             :precision => 8, :scale => 2, :default => 0.0
+    t.integer  "category_id"
+    t.integer  "quantity",                                        :default => 0
+    t.string   "size"
+    t.integer  "main_image_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "messages", :force => true do |t|
     t.string   "name"
     t.string   "message"
     t.string   "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "orders", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
