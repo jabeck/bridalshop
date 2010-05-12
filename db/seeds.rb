@@ -23,4 +23,3 @@ Message.create(:name => "Purchase Message",
 Message.create(:name => "Designer Message", 
                       :message => "Browse our specials from these designers:",
                       :description => "This message will appear in the title of the /shop/designer_list page.")
-Admin.new(:login => "kay", :password => "shell4trouble", :password_confirmation => "shell4trouble")
