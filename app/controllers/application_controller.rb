@@ -9,11 +9,11 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   filter_parameter_logging :password
   
-  def rescue_action_in_public(exception)
+  def render_optional_error_file(status_code)
     # do something based on exception
-    errors = [ActionController::RoutingError, ActionController::UnknownAction, ActiveRecord::RecordNotFound]
-    message = exception.backtrace.join("\n") unless exception
-    if errors.include?(exception)
+
+
+    if status_code == :not_found
       render :file => "#{RAILS_ROOT}/public/404.html", :layout => false, :status => 404
     else
       render :file => "#{RAILS_ROOT}/public/500.html", :layout => false, :status => 500
