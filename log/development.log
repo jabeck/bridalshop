@@ -38308,3 +38308,180 @@ Rendering admins/admin
 Rendered sessions/_new (1.7ms)
 Rendered shop/_top_bar (0.1ms)
 Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:02:53) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-ui-1.8.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:02:53) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:02:53) [GET]
+
+ActionController::RoutingError (No route matches "/css/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:07:37) [GET]
+
+ActionController::RoutingError (No route matches "/css/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:07:37) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:07:37) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-ui-1.8.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:08:35) [GET]
+
+ActionController::RoutingError (No route matches "/css/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:08:36) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:08:36) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-ui-1.8.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:08:38) [GET]
+
+ActionController::RoutingError (No route matches "//js/jquery-ui-1.8.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:08:38) [GET]
+
+ActionController::RoutingError (No route matches "//css/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:08:38) [GET]
+
+ActionController::RoutingError (No route matches "//js/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:09:00) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-ui-1.8.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:09:00) [GET]
+
+ActionController::RoutingError (No route matches "/css/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:09:00) [GET]
+
+ActionController::RoutingError (No route matches "/js/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 20:11:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"shop"}
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" WHERE (name = 'Welcome Message') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering shop/index
+Rendered shop/_top_bar (0.7ms)
+  [4;36;1mAdmin Load (0.2ms)[0m   [0;1mSELECT * FROM "admins" WHERE ("admins"."remember_token" = '') LIMIT 1[0m
+Completed in 59ms (View: 42, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 20:11:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"shop"}
+  [4;35;1mMessage Load (0.6ms)[0m   [0mSELECT * FROM "messages" WHERE (name = 'Welcome Message') LIMIT 1[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering shop/index
+Rendered shop/_top_bar (0.1ms)
+  [4;35;1mAdmin Load (0.2ms)[0m   [0mSELECT * FROM "admins" WHERE ("admins"."remember_token" = '') LIMIT 1[0m
+Completed in 77ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 20:11:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"shop"}
+  [4;36;1mMessage Load (0.7ms)[0m   [0;1mSELECT * FROM "messages" WHERE (name = 'Welcome Message') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering shop/index
+Rendered shop/_top_bar (0.1ms)
+  [4;36;1mAdmin Load (0.2ms)[0m   [0;1mSELECT * FROM "admins" WHERE ("admins"."remember_token" = '') LIMIT 1[0m
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/shop]
+
+
+Processing ShopController#category_browse (for 127.0.0.1 at 2010-05-12 20:11:10) [GET]
+  Parameters: {"action"=>"category_browse", "id"=>"1", "controller"=>"shop"}
+  [4;35;1mCategory Load (0.2ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items".category_id = 1) [0m
+Rendering template within layouts/application
+Rendering shop/category_browse
+Rendered shop/_navigator (1.1ms)
+Rendered shop/_top_bar (0.1ms)
+  [4;35;1mAdmin Load (0.2ms)[0m   [0mSELECT * FROM "admins" WHERE ("admins"."remember_token" = '') LIMIT 1[0m
+Completed in 88ms (View: 77, DB: 1) | 200 OK [http://localhost/shop/category_browse/1]
+
+
+Processing ShopController#category_browse (for 127.0.0.1 at 2010-05-12 20:11:12) [GET]
+  Parameters: {"action"=>"category_browse", "id"=>"2", "controller"=>"shop"}
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items".category_id = 2) [0m
+Rendering template within layouts/application
+Rendering shop/category_browse
+Rendered shop/_navigator (0.3ms)
+Rendered shop/_top_bar (0.1ms)
+  [4;36;1mAdmin Load (0.2ms)[0m   [0;1mSELECT * FROM "admins" WHERE ("admins"."remember_token" = '') LIMIT 1[0m
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/shop/category_browse/2]
