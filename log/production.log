@@ -575,3 +575,41 @@ ActionController::RoutingError (No route matches "/public/images/header.png" wit
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:16:31) [GET]
+
+ActionController::RoutingError (No route matches "/foo" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:16:35) [GET]
+
+ActionController::RoutingError (No route matches "/admin/foo" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 23:16:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"shop"}
+Rendering template within layouts/application
+Rendering shop/index
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 23:21:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"shop"}
+Rendering template within layouts/application
+Rendering shop/index
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:21:26) [GET]
+
+ActionController::RoutingError (No route matches "/foo" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
