@@ -5,25 +5,15 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Dan's Bridal and Tuxedo</title>
-  <link rel="stylesheet" type="text/css" href="stylesheets/blueprint/screen.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/pepper-grinder/jquery-ui-1.8.custom.css" %>
-  <link rel="stylesheet" type="text/css" href="stylesheets/bridalshop.css" %>
+  <%= stylesheet_link_tag 'blueprint/screen' %>
+  <%= stylesheet_link_tag 'pepper-grinder/jquery-ui-1.8.custom.css' %>
+  <%= stylesheet_link_tag 'bridalshop' %>
 </head>
 <body>
   <div id="wrapper" class="ui-helper-clearfix">
 	<div class="span-20 ui-widget-content ui-corner-all ui-helper-clearfix" style="padding-bottom: 30px;">
-	    <div id="header" class="ui-corner-top span-20 last"><img src="images/header.png" /></div>
-		<div id="tabs" class="ui-tabs ui-tabs-widget span-20 last">
-		  <div class="prepend-3 span-17 last">
-		  <ul class="ui-tabs-nav ui-helper-clearfix">
-		    <li><a href="/shop">Browse all</a></li>
-		    <li><a href="/shop/category_browse/1">Wedding Gowns</a></li>
-		    <li><a href="/shop/category_browse/2">Bridesmaid Gowns</a></li>
-		    <li><a href="/shop/category_browse/3">Shoes</a></li>
-		    <li><a href="/shop/designer_list">Designers</a></li>
-		  </ul>
-		  </div>
-		</div>
+	    <div id="header" class="ui-corner-top span-20 last"><%= image_tag 'header.png' %></div>
+		<%= render :partial => '/shop/top_bar' %>
 	    <div class="prepend-1 span-19 last">
 			<div id="error-box" class="prepend-4">
 	    		<h2>Action Not Permitted</h2>
