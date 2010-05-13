@@ -38485,3 +38485,27 @@ Rendered shop/_navigator (0.3ms)
 Rendered shop/_top_bar (0.1ms)
   [4;36;1mAdmin Load (0.2ms)[0m   [0;1mSELECT * FROM "admins" WHERE ("admins"."remember_token" = '') LIMIT 1[0m
 Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/shop/category_browse/2]
+
+
+Processing ShopController#category_browse (for 127.0.0.1 at 2010-05-12 20:33:21) [GET]
+  Parameters: {"action"=>"category_browse", "id"=>"2", "controller"=>"shop"}
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items".category_id = 2) [0m
+Rendering template within layouts/application
+Rendering shop/category_browse
+Rendered shop/_navigator (1.1ms)
+Rendered shop/_top_bar (0.6ms)
+  [4;36;1mAdmin Load (0.2ms)[0m   [0;1mSELECT * FROM "admins" WHERE ("admins"."remember_token" = '') LIMIT 1[0m
+Completed in 62ms (View: 34, DB: 1) | 200 OK [http://localhost/shop/category_browse/2]
+
+
+Processing ShopController#category_browse (for 127.0.0.1 at 2010-05-12 20:33:24) [GET]
+  Parameters: {"action"=>"category_browse", "id"=>"8", "controller"=>"shop"}
+  [4;35;1mCategory Load (0.1ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 8) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Category with ID=8):
+  app/controllers/shop_controller.rb:54:in `category_browse'
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (not_found)

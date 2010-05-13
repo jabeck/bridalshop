@@ -1,0 +1,226 @@
+
+
+Processing ShopController#category_browse (for 127.0.0.1 at 2010-05-12 20:33:56) [GET]
+  Parameters: {"action"=>"category_browse", "id"=>"8", "controller"=>"shop"}
+
+ActiveRecord::StatementInvalid (Could not find table 'categories'):
+  app/controllers/shop_controller.rb:54:in `category_browse'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 20:34:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"shop"}
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: messages: SELECT * FROM "messages" WHERE (name = 'Welcome Message')  LIMIT 1):
+  app/controllers/shop_controller.rb:3:in `index'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 20:34:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"shop"}
+Rendering template within layouts/application
+Rendering shop/index
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/shop]
+
+
+Processing ShopController#category_browse (for 127.0.0.1 at 2010-05-12 20:34:38) [GET]
+  Parameters: {"action"=>"category_browse", "id"=>"1", "controller"=>"shop"}
+Rendering template within layouts/application
+Rendering shop/category_browse
+Completed in 9ms (View: 5, DB: 2) | 200 OK [http://localhost/shop/category_browse/1]
+
+
+Processing ShopController#category_browse (for 127.0.0.1 at 2010-05-12 20:34:42) [GET]
+  Parameters: {"action"=>"category_browse", "id"=>"8", "controller"=>"shop"}
+
+ActiveRecord::RecordNotFound (Couldn't find Category with ID=8):
+  app/controllers/shop_controller.rb:54:in `category_browse'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ShopController#index (for 127.0.0.1 at 2010-05-12 20:36:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"shop"}
+Rendering template within layouts/application
+Rendering shop/index
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:36:23) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:37:17) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 20:37:31) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/admin
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 20:38:34) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/admin
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-12 20:38:51) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"+OhBO8HqmfTet0U6AcZUZevcTTcmBaAwS4xfmjPuT+0=", "controller"=>"sessions", "login"=>"kay", "password"=>"[FILTERED]"}
+Failed login for 'kay' from 127.0.0.1 at Thu May 13 00:38:51 UTC 2010
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-12 20:39:05) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"+OhBO8HqmfTet0U6AcZUZevcTTcmBaAwS4xfmjPuT+0=", "controller"=>"sessions", "login"=>"kay", "password"=>"[FILTERED]"}
+Failed login for 'kay' from 127.0.0.1 at Thu May 13 00:39:05 UTC 2010
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/session]
+
+
+Processing AdminsController#new (for 127.0.0.1 at 2010-05-12 20:39:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/new
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/admins/new]
+
+
+Processing AdminsController#create (for 127.0.0.1 at 2010-05-12 20:39:27) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"+OhBO8HqmfTet0U6AcZUZevcTTcmBaAwS4xfmjPuT+0=", "admin"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"kay", "email"=>"kay@dansbridalandtux.com"}, "controller"=>"admins"}
+Redirected to http://localhost:3000/admin
+Completed in 60ms (DB: 1) | 302 Found [http://localhost/admins]
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 20:39:27) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/admin
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-12 20:39:29) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://localhost:3000/admin
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 20:39:30) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/admin
+Completed in 13ms (View: 12, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-12 20:39:36) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"bH/MvyepBgOsHxAVj6ojZopETX/p9J7uPp+dbbQH9yg=", "controller"=>"sessions", "login"=>"kay", "password"=>"[FILTERED]"}
+Failed login for 'kay' from 127.0.0.1 at Thu May 13 00:39:36 UTC 2010
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/session]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-12 20:39:43) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"bH/MvyepBgOsHxAVj6ojZopETX/p9J7uPp+dbbQH9yg=", "controller"=>"sessions", "login"=>"kay", "password"=>"[FILTERED]"}
+Redirected to http://localhost:3000/admin
+Completed in 4ms (DB: 1) | 302 Found [http://localhost/session]
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 20:39:43) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/admin
+Completed in 13ms (View: 12, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-12 20:43:50) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://localhost:3000/admin
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 20:43:50) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/admin
+Completed in 9ms (View: 8, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-12 20:43:53) [POST]
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"yNULx9vUqxqNHvwwMeSo3Jiydp59mSeGvkQ7Nh+9bq8=", "controller"=>"sessions", "login"=>"kay", "password"=>"[FILTERED]"}
+Failed login for 'kay' from 127.0.0.1 at Thu May 13 00:43:53 UTC 2010
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://localhost/session]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 20:44:12) [GET]
+
+ActionController::RoutingError (No route matches "/session/bob" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#show (for 127.0.0.1 at 2010-05-12 20:50:08) [GET]
+  Parameters: {"action"=>"show", "controller"=>"sessions"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 20:50:18) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/admin
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing AdminsController#new (for 127.0.0.1 at 2010-05-12 20:50:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/new
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://localhost/admins/new]
+
+
+Processing AdminsController#create (for 127.0.0.1 at 2010-05-12 20:50:42) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"MFeY86UL3Eeh8II9agUCF3tp4CsAGcgWHabpdhxTRh8=", "admin"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "login"=>"kay", "email"=>"kay@dansbridalandtux.com"}, "controller"=>"admins"}
+Redirected to http://localhost:3000/admin
+Completed in 53ms (DB: 1) | 302 Found [http://localhost/admins]
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 20:50:42) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/admin
+Completed in 125ms (View: 124, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-12 20:50:45) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+Redirected to http://localhost:3000/admin
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 20:50:45) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/admin
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://localhost/admin]
