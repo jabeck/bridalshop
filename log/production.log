@@ -327,3 +327,251 @@ ActionController::RoutingError (No route matches "/public/stylesheets/bridalshop
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing ShopController#foo (for 127.0.0.1 at 2010-05-12 22:40:33) [GET]
+  Parameters: {"action"=>"foo", "controller"=>"shop"}
+
+ActionController::UnknownAction (No action responded to foo. Actions: add_to_order, category_browse, checkout, delete_order, designer_browse, designer_list, display_order, index, remove_from_order, and view_all):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:40:40) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:40:40) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/bridalshop.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:40:40) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:40:40) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:42:20) [GET]
+
+ActionController::RoutingError (No route matches "/~/public/stylesheets/bridalshop.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:42:20) [GET]
+
+ActionController::RoutingError (No route matches "/~/public/stylesheets/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:42:20) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:42:20) [GET]
+
+ActionController::RoutingError (No route matches "/~/public/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:42:48) [GET]
+
+ActionController::RoutingError (No route matches "/~/public/stylesheets/bridalshop.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:42:48) [GET]
+
+ActionController::RoutingError (No route matches "/RAILS_ROOT" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:42:48) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:42:48) [GET]
+
+ActionController::RoutingError (No route matches "/~/public/stylesheets/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:43:02) [GET]
+
+ActionController::RoutingError (No route matches "/RAILS_ROOT" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:43:02) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:43:02) [GET]
+
+ActionController::RoutingError (No route matches "/~/public/stylesheets/bridalshop.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:43:02) [GET]
+
+ActionController::RoutingError (No route matches "/~/public/stylesheets/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:43:55) [GET]
+
+ActionController::RoutingError (No route matches "/bridalshop/public/stylesheets/bridalshop.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:43:55) [GET]
+
+ActionController::RoutingError (No route matches "/bridalshop/public/stylesheets/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:43:55) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:43:55) [GET]
+
+ActionController::RoutingError (No route matches "/bridalshop/public/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:51:56) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:52:16) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:54:09) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 22:55:18) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 22ms (DB: 0) | 302 Found [http://localhost/admin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-12 22:55:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 23ms (View: 21, DB: 1) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:59:07) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:59:29) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ShopController#foo (for 127.0.0.1 at 2010-05-12 22:59:35) [GET]
+  Parameters: {"action"=>"foo", "controller"=>"shop"}
+
+ActionController::UnknownAction (No action responded to foo. Actions: add_to_order, category_browse, checkout, delete_order, designer_browse, designer_list, display_order, index, remove_from_order, and view_all):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:59:47) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 23:00:06) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

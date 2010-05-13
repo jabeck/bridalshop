@@ -2,7 +2,7 @@ class AdminsController < ApplicationController
   # Be sure to include AuthenticationSystem in Application Controller instead
   #include AuthenticatedSystem
   
-  #before_filter :login_required
+  before_filter :login_required
   # render new.rhtml
   def new
     @admin = Admin.new
@@ -19,7 +19,7 @@ class AdminsController < ApplicationController
       # reset session
       self.current_admin = @admin # !! now logged in
       redirect_back_or_default('/admin')
-      flash[:notice] = "Thanks for signing up!  We're sending you an email with your activation code."
+      flash[:notice] = "Thanks for signing up!"
     else
       flash[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
       render :action => 'new'
