@@ -11,12 +11,10 @@ class ApplicationController < ActionController::Base
   
   def render_optional_error_file(status_code)
     # do something based on exception
-
-
     if status_code == :not_found
-      render :file => "#{RAILS_ROOT}/public/404.html", :layout => false, :status => 404
+      render :template => "#{RAILS_ROOT}/public/404.html", :layout => false, :status => 404
     else
-      render :file => "#{RAILS_ROOT}/public/500.html", :layout => false, :status => 500
+      render :template => "#{RAILS_ROOT}/public/500.html", :layout => false, :status => 500
     end
   end  
 end
