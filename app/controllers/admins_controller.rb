@@ -1,8 +1,8 @@
 class AdminsController < ApplicationController
   # Be sure to include AuthenticationSystem in Application Controller instead
-  include AuthenticatedSystem
+  #include AuthenticatedSystem
   
-
+  before_filter :login_required
   # render new.rhtml
   def new
     @admin = Admin.new
@@ -24,5 +24,8 @@ class AdminsController < ApplicationController
       flash[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
       render :action => 'new'
     end
+  end
+  
+  def admin
   end
 end
