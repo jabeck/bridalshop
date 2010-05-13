@@ -1,2 +1,2 @@
-restful_authentication
-attachment_fu
+restful_authentication --source github.com/technoweenie/restful-authentication.git
+attachment_fu --source github.com/technoweenie/attachment_fu.git
