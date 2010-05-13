@@ -224,3 +224,106 @@ Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 20:50:45) [GET]
 Rendering template within layouts/application
 Rendering admins/admin
 Completed in 6ms (View: 5, DB: 1) | 200 OK [http://localhost/admin]
+
+
+Processing AdminsController#admin (for 127.0.0.1 at 2010-05-12 21:21:38) [GET]
+  Parameters: {"action"=>"admin", "controller"=>"admins"}
+Rendering template within layouts/application
+Rendering admins/admin
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 21:21:42) [GET]
+
+ActionController::RoutingError (No route matches "/admin/foo" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:11) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:11) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:11) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:11) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/bridalshop.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:41) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/header.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:41) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/bridalshop.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:41) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:41) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:55) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:55) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/pepper-grinder/jquery-ui-1.8.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-12 22:18:55) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/bridalshop.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

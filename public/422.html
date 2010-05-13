@@ -2,29 +2,40 @@
        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>The change you wanted was rejected (422)</title>
-	<style type="text/css">
-		body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
-		div.dialog {
-			width: 25em;
-			padding: 0 4em;
-			margin: 4em auto 0 auto;
-			border: 1px solid #ccc;
-			border-right-color: #999;
-			border-bottom-color: #999;
-		}
-		h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
-	</style>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Dan's Bridal and Tuxedo</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/blueprint/screen.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/pepper-grinder/jquery-ui-1.8.custom.css" %>
+  <link rel="stylesheet" type="text/css" href="stylesheets/bridalshop.css" %>
 </head>
-
 <body>
-  <!-- This file lives in public/422.html -->
-  <div class="dialog">
-    <h1>The change you wanted was rejected.</h1>
-    <p>Maybe you tried to change something you didn't have access to.</p>
+  <div id="wrapper" class="ui-helper-clearfix">
+	<div class="span-20 ui-widget-content ui-corner-all ui-helper-clearfix" style="padding-bottom: 30px;">
+	    <div id="header" class="ui-corner-top span-20 last"><img src="images/header.png" /></div>
+		<div id="tabs" class="ui-tabs ui-tabs-widget span-20 last">
+		  <div class="prepend-3 span-17 last">
+		  <ul class="ui-tabs-nav ui-helper-clearfix">
+		    <li><a href="/shop">Browse all</a></li>
+		    <li><a href="/shop/category_browse/1">Wedding Gowns</a></li>
+		    <li><a href="/shop/category_browse/2">Bridesmaid Gowns</a></li>
+		    <li><a href="/shop/category_browse/3">Shoes</a></li>
+		    <li><a href="/shop/designer_list">Designers</a></li>
+		  </ul>
+		  </div>
+		</div>
+	    <div class="prepend-1 span-19 last">
+			<div id="error-box" class="prepend-4">
+	    		<h2>Action Not Permitted</h2>
+				<h3>Make sure you are logged in and have access.</h3>
+			</div>
+	    </div>
+		<div class='prepend-1 span-4 last'>
+	      <% if logged_in? %>
+		  	<%= link_to "Admin Page", :controller => :admin %>
+		  <% end %>
+		</div>
+	</div>
   </div>
 </body>
 </html>
